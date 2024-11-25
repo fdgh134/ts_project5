@@ -25,3 +25,10 @@ const dog = new Dog("백구");
 dog.makeSound();
 const cat = new Cat("삼색");
 cat.makeSound();
+const dog2 = new Dog("또순이");
+const animal = dog2; // upcasting
+animal.makeSound(); // 슈퍼타입(Animal)으로 변환되어 eat 메서드 호출 X
+let animal2;
+animal2 = new Dog("또왔순이");
+const realDog = animal;
+realDog.eat();
